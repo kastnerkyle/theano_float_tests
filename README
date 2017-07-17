@@ -1,0 +1,2 @@
+conda install -c conda-forge pygpu libgpuarray Theano numpy scipy nose mako check Cython
+theano-cache purge
