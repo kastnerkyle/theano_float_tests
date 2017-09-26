@@ -1,2 +1,12 @@
-conda install -c conda-forge pygpu libgpuarray Theano numpy scipy nose mako check Cython
-theano-cache purge
+#conda install -c conda-forge pygpu libgpuarray Theano numpy scipy nose mako check Cython
+Install latest Theano and libgpuarray from source
+"""
+helper function 
+function sourcef16 {
+    export CPATH=$CPATH:~/.local/include
+    export LIBRARY_PATH=$LIBRARY_PATH:~/.local/lib
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/.local/lib
+    export PYTHONPATH=~/anaconda/envs/float16/lib/python2.7/site-packages/:$PYTHONPATH
+}
+"""
+All libgpuarray tests pass...
